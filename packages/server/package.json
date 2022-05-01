@@ -18,7 +18,7 @@
     "test-unit": "node ./test/scripts/run.js --glob-in-dir=test/unit"
   },
   "dependencies": {
-    "@babel/parser": "7.13.0",
+    "@babel/parser": "7.17.10",
     "@benmalka/foxdriver": "0.4.1",
     "@cypress/commit-info": "2.2.0",
     "@cypress/get-windows-proxy": "1.6.2",
@@ -120,8 +120,8 @@
     "winston": "2.4.4"
   },
   "devDependencies": {
-    "@babel/core": "7.9.0",
-    "@babel/preset-env": "7.9.0",
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
     "@cypress/debugging-proxy": "2.0.1",
     "@cypress/json-schemas": "5.39.0",
     "@cypress/sinon-chai": "2.9.1",
@@ -143,7 +143,7 @@
     "@types/chrome": "0.0.101",
     "@types/http-proxy": "1.17.4",
     "@types/node": "14.14.31",
-    "babel-loader": "8.1.0",
+    "babel-loader": "8.2.5",
     "chai-as-promised": "7.1.1",
     "chai-subset": "1.6.0",
     "chai-uuid": "1.0.6",
