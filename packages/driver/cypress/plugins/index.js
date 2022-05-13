@@ -63,6 +63,20 @@ module.exports = (on, config) => {
       return null
     },
     'check:screenshot:size' ({ name, width, height, devicePixelRatio }) {
+      console.log('expected screenshot path', path.join(__dirname, '..', 'screenshots', name))
+      console.log('screenshotfolder', config?.screenshotsFolder)
+      fs.readdirSync(config?.screenshotsFolder).forEach((file) => {
+        console.log(file)
+      })
+
+      console.log('done listing dirs')
+
+      fs.readdirSync(path.join(config?.screenshotsFolder, 'e2e')).forEach((file) => {
+        console.log(file)
+      })
+
+      console.log('done listing screenshots')
+
       return Jimp.read(path.join(__dirname, '..', 'screenshots', name))
       .then((image) => {
         width = width * devicePixelRatio

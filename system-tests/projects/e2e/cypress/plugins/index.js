@@ -151,6 +151,8 @@ module.exports = (on, config) => {
     },
 
     'check:screenshot:size' ({ name, width, height, devicePixelRatio }) {
+      console.log('expected screenshot path', path.join(__dirname, '..', 'screenshots', name))
+
       return Jimp.read(path.join(__dirname, '..', 'screenshots', name))
       .then((image) => {
         width = width * devicePixelRatio
